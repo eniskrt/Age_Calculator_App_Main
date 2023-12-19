@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Local Css -->
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Age Calculator App Main | Frontend Mentor</title>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="card-body">
+            <div class="inputs">
+                <form class="row">
+                    <div class="col-4 col-md-3">
+                        <label class="form-label" for="day" id="lblDay">DAY</label>
+                        <input type="number" class="form-control" name="day" id="day" placeholder="DD">
+                        <small id="dayValid"></small>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <label class="form-label" for="month" id="lblMonth">MONTH</label>
+                        <input type="number" class="form-control" name="month" id="month" placeholder="MM">
+                        <small id="monthValid"></small>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <label class="form-label" for="year" id="lblYear">YEAR</label>
+                        <input type="number" class="form-control" name="year" id="year" placeholder="YYYY">
+                        <small id="yearValid"></small>
+                    </div>
+                    <div class="col-3">
+                        <div class="button" id="btn">
+                            <img src="assets/images/icon-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="result">
+                    <p><span id="resultYear">--</span>years</p>
+                    <p><span id="resultMonth">--</span>months</p>
+                    <p><span id="resultDay">--</span>days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local Js -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
